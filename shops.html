@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LocalKart - Shops</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo-container">
+        <img src="logo.png" class="nav-logo">
+        <span class="logo-text">LocalKart</span>
+    </div>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="shops.html">Shops</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+    </ul>
+</nav>
+
+
+<section class="shops-section">
+
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="magma.mp4" type="video/mp4">
+    </video>
+
+    <div class="section-header">
+        <h1>Explore Shops Near You</h1>
+        <p>Find the best local stores with fast delivery and top ratings</p>
+
+        <div class="location-bar">
+            📍 Delivering to: <strong>123456</strong>
+            <button class="change-location">Change</button>
+        </div>
+
+
+    <div class="search-filter-bar">
+
+    <input type="text"
+           id="searchInput"
+           placeholder="Search shops..."
+           class="search-input">
+
+    <select id="ratingFilter" class="filter-dropdown">
+        <option value="">Filter by Rating</option>
+        <option value="4.5">4.5 & above</option>
+        <option value="4.0">4.0 & above</option>
+    </select>
+
+    <select id="deliveryFilter" class="filter-dropdown">
+        <option value="">Delivery Type</option>
+        <option value="same">Same Day</option>
+        <option value="tomorrow">Tomorrow</option>
+        <option value="twodays">2 Days</option>
+    </select>
+
+</div>
+
+
+    <div class="shops-grid">
+
+        <div class="shop-card">
+            <h2>Fresh Mart Grocery</h2>
+            <div class="bestseller">
+            <i class="bi bi-fire"></i> Bestseller
+             </div>
+            <p class="desc">Daily essentials & fresh produce</p>
+            <p class="rating">⭐ 4.6 / 5</p>
+            <div class="distance">0.8 km away</div>
+            <div class="delivery same">Same-Day Delivery</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+        <div class="shop-card">
+            <h2>HealthPlus Pharmacy</h2>
+            <div class="bestseller">
+            <i class="bi bi-fire"></i> Bestseller
+             </div>
+            <p class="desc">Medicines & healthcare supplies</p>
+            <p class="rating">⭐ 4.8 / 5</p>
+            <div class="distance">0.6 km away</div>
+            <div class="delivery tomorrow">Delivery Tomorrow</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+        <div class="shop-card">
+            <h2>Green Basket Store</h2>
+            <p class="desc">Organic fruits & vegetables</p>
+            <p class="rating">⭐ 4.5 / 5</p>
+            <div class="distance">0.6 km away</div>
+            <div class="delivery same">Same-Day Delivery</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+        <div class="shop-card">
+            <h2>Daily Needs Supermart</h2>
+            <p class="desc">Groceries & household items</p>
+            <p class="rating">⭐ 4.4 / 5</p>
+            <div class="distance">2.2 km away</div>
+            <div class="delivery twodays">Delivery in 2 Days</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+        <div class="shop-card">
+            <h2>Quick Essentials</h2>
+            <p class="desc">Fast delivery convenience store</p>
+            <p class="rating">⭐ 4.3 / 5</p>
+            <div class="distance">1.7 km away</div>
+            <div class="delivery tomorrow">Delivery Tomorrow</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+
+        <div class="shop-card">
+            <h2>Family Grocery Hub</h2>
+            <p class="desc">Affordable everyday groceries</p>
+            <p class="rating">⭐ 4.2 / 5</p>
+            <div class="distance">1.4 km away</div>
+            <div class="delivery same">Same-Day Delivery</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+        <div class="shop-card">
+            <h2>Urban Fresh Market</h2>
+            <p class="desc">Premium fresh vegetables</p>
+            <p class="rating">⭐ 4.7 / 5</p>
+            <div class="distance">2.4 km away</div>
+            <div class="delivery twodays">Delivery in 2 Days</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+        <div class="shop-card">
+            <h2>City Care Pharmacy</h2>
+            <p class="desc">Trusted medicines & health care</p>
+            <p class="rating">⭐ 4.5 / 5</p>
+            <div class="distance">0.9 km away</div>
+            <div class="delivery same">Same-Day Delivery</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+        <div class="shop-card">
+            <h2> City Supermarket</h2>
+            <div class="bestseller">
+            <i class="bi bi-fire"></i> Bestseller
+             </div>
+            <p class="desc">All kind of grocery and continential</p>
+            <p class="rating">⭐ 4.6 / 5</p>
+            <div class="distance">2.0 km away</div>
+            <div class="delivery tomorrow">Delivery Tomorrow</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+        <div class="shop-card">
+            <h2>Prime Grocery Point</h2>
+            <p class="desc">All-in-one grocery store</p>
+            <p class="rating">⭐ 4.4 / 5</p>
+            <div class="distance">1.6 km away</div>
+            <div class="delivery tomorrow">Delivery Tomorrow</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+        <div class="shop-card">
+    <h2>SmartCare Pharmacy</h2>
+    <div class="bestseller">
+        <i class="bi bi-fire"></i> Bestseller
+    </div>
+    <p class="desc">Fast medicines & healthcare supplies</p>
+    <p class="rating">⭐ 4.8 / 5</p>
+    <div class="distance">1.2 km away</div>
+    <div class="delivery tomorrow">Delivery Tomorrow</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+<div class="shop-card">
+    <h2>Metro Grocery Store</h2>
+    <p class="desc">Fresh groceries & packaged foods</p>
+    <p class="rating">⭐ 4.3 / 5</p>
+    <div class="distance">1.3 km away</div>
+    <div class="delivery same">Same-Day Delivery</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+<div class="shop-card">
+    <h2>Neighborhood Mart</h2>
+    <p class="desc">Daily essentials & snacks</p>
+    <p class="rating">⭐ 4.2 / 5</p>
+    <div class="distance">2.0 km away</div>
+    <div class="delivery tomorrow">Delivery Tomorrow</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+<div class="shop-card">
+    <h2>Fresh Valley Market</h2>
+    <p class="desc">Farm fresh vegetables & fruits</p>
+    <p class="rating">⭐ 4.7 / 5</p>
+    <div class="distance">0.7 km away</div>
+    <div class="delivery same">Same-Day Delivery</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+<div class="shop-card">
+            <h2>Bakers Point</h2>
+            <div class="bestseller">
+            <i class="bi bi-fire"></i> Bestseller
+             </div>
+            <p class="desc">All kinds of bread available</p>
+            <p class="rating">⭐ 4.5 / 5</p>
+            <div class="distance">1.8 km away</div>
+            <div class="delivery tomorrow">Delivery Tomorrow</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+<div class="shop-card">
+    <h2>SmartSave Grocery</h2>
+    <p class="desc">Budget friendly grocery store</p>
+    <p class="rating">⭐ 4.1 / 5</p>
+    <div class="distance">1.9 km away</div>
+    <div class="delivery twodays">Delivery in 2 Days</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+<div class="shop-card">
+    <h2>Wellness Pharmacy</h2>
+    <p class="desc">Health & personal care products</p>
+    <p class="rating">⭐ 4.6 / 5</p>
+    <div class="distance">1.0 km away</div>
+    <div class="delivery tomorrow">Delivery Tomorrow</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+<div class="shop-card">
+    <h2>Elite Fresh Grocery</h2>
+    <div class="bestseller">
+        <i class="bi bi-fire"></i> Bestseller
+    </div>
+    <p class="desc">Premium quality fruits & daily essentials</p>
+    <p class="rating">⭐ 4.9 / 5</p>
+    <div class="distance">0.5 km away</div>
+    <div class="delivery same">Same-Day Delivery</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+<div class="shop-card">
+    <h2>Rapid Retail Store</h2>
+    <p class="desc">Quick delivery essentials</p>
+    <p class="rating">⭐ 4.4 / 5</p>
+    <div class="distance">2.5 km away</div>
+    <div class="delivery twodays">Delivery in 2 Days</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+<div class="shop-card">
+    <h2>Urban Daily </h2>
+    <p class="desc">Groceries & beverages</p>
+    <p class="rating">⭐ 4.3 / 5</p>
+    <div class="distance">0.9 km away</div>
+    <div class="delivery same">Same-Day Delivery</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+<div class="shop-card">
+    <h2>Fresh Choice Store</h2>
+    <p class="desc">Quality vegetables & fruits</p>
+    <p class="rating">⭐ 4.5 / 5</p>
+    <div class="distance">1.6 km away</div>
+    <div class="delivery tomorrow">Delivery Tomorrow</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+<div class="shop-card">
+            <h2>Organic World</h2>
+            <div class="bestseller">
+            <i class="bi bi-fire"></i> Bestseller
+             </div>
+            <p class="desc">Fresh Fruits & Vegetables</p>
+            <p class="rating">⭐ 4.4 / 5</p>
+            <div class="distance">3.1 km away</div>
+            <div class="delivery same">Same-Day Delivery</div>
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+<div class="shop-card">
+    <h2>CarePlus Medical</h2>
+    <p class="desc">Medicines & healthcare supplies</p>
+    <p class="rating">⭐ 4.8 / 5</p>
+    <div class="distance">0.8 km away</div>
+    <div class="delivery same">Same-Day Delivery</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+<div class="shop-card">
+    <h2>Happy Homes Grocery</h2>
+    <p class="desc">Complete household essentials</p>
+    <p class="rating">⭐ 4.2 / 5</p>
+    <div class="distance">2.3 km away</div>
+    <div class="delivery twodays">Delivery in 2 Days</div>
+    <a href="products.html" class="shop-btn">Shop Now</a>
+</div>
+
+        
+    </div>
+</section>
+
+ </section>
+
+<footer class="footer">
+    © 2026 LocalKart | Hyperlocal Marketplace
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
