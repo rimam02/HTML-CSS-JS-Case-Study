@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LocalKart - Checkout </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<div class="navbar">
+    <div class="logo">
+        <img src="logo.png" class="logo-img">
+        <span>LocalKart</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shops.html">Shops</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="checkout.html">Checkout</a>
+        
+    </div>
+</div>
+</header>
+
+
+<section class="checkout-hero">
+    
+
+
+<div class="checkout-container">
+
+    <div class="checkout-logo">
+    <img src="trolley.png" alt="Checkout Icon">
+</div>
+
+
+<h1 class="checkout-title">Delivery Details</h1>
+
+<form id="checkoutForm">
+
+<input type="text" id="fname" placeholder="First Name *" required>
+<input type="text" id="lname" placeholder="Last Name *" required>
+<input type="email" id="email" placeholder="Email (optional)">
+<input type="text" id="phone" placeholder="Phone *" required>
+<input type="text" id="address" placeholder="Address *" required>
+<input type="text" id="pincode" placeholder="Pincode *" required>
+<input type="text" id="shop name" placeholder="Shop Name *" required>
+
+<h4 class="payment-heading">Payment Method</h4>
+
+<div class="payment-options" placeholder="*"required>
+<label>
+<input type="radio" name="payment" value="cash">
+Cash on Delivery
+</label>
+
+<label>
+<input type="radio" name="payment" value="upi">
+UPI
+</label>
+
+<label>
+<input type="radio" name="payment" value="card">
+Card
+</label>
+</div>
+
+<div id="upiBox" class=" hidden">
+<input type="text"  placeholder="Enter UPI ID">
+</div>
+
+
+<div id="cardBox" class=" hidden">
+
+<input type="text"  placeholder="Card Holder Name">
+<input type="text"  placeholder="Card Number">
+<input type="text"  placeholder="Expiry Date (MM/YY)">
+<input type="text"  placeholder="CVV">
+
+</div>
+
+
+
+<button type="submit" class="place-order-btn">Place Order</button>
+
+</form>
+
+<div id="orderPopup" class="order-popup">
+  <div class="popup-box">
+    <h2>✅ Order Placed!</h2>
+    <p>Your order has been successfully placed.</p>
+    <button onclick="continueShopping()">Continue Shopping</button>
+  </div>
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer class="footer">
+    <p>© 2026 LocalKart. Hyperlocal Marketplace</p>
+</footer>
+
+
+<script src="js/script.js">
+</script>
+
+
+
+</body>
+</html>
