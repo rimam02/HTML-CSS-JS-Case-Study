@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - LocalKart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-body">
+
+<div class="login-page">
+
+    <div class="login-form-section">
+
+        <div class="login-box" id="loginBox">
+            <h2>Welcome Back!</h2>
+            <p>Login to continue shopping locally</p>
+
+            <input type="text" id="loginUsername" placeholder="Enter username">
+            <input type="password" id="loginPassword" placeholder="Enter password">
+
+            <button class="login-btn" onclick="loginUser()">Login</button>
+
+            <div class="signup-text">
+                Don't have an account?
+                <a href="#" onclick="showRegister()">Sign up</a>
+            </div>
+
+            <p class="error-msg" id="loginError"></p>
+        </div>
+
+        <div class="login-box" id="registerBox" style="display: none;">
+            <h2>Create Account</h2>
+            <p>Register to start shopping</p>
+
+            <input type="text" id="registerUsername" placeholder="Create username">
+            <input type="password" id="registerPassword" placeholder="Create password">
+
+            <button class="login-btn" onclick="registerUser()">Sign Up</button>
+
+            <div class="signup-text">
+                Already have an account?
+                <a href="#" onclick="showLogin()">Login</a>
+            </div>
+
+            <p class="error-msg" id="registerError"></p>
+        </div>
+
+    </div>
+
+    <div class="login-video-section">
+        <video autoplay muted loop playsinline>
+            <source src="shoppingvedio.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
