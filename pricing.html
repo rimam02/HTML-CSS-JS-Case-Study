@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LocalKart - Sell With Us</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="video-bg">
+    <video autoplay muted loop playsinline>
+        <source src="money.mp4" type="video/mp4">
+    </video>
+</div>
+
+
+<header>
+    <div class="navbar">
+
+        <div class="logo">
+        <img src="logo.png" class="logo-img">
+        <span>LocalKart</span>
+    </div>
+
+
+<div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shops.html">Shops</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="checkout.html">Checkout</a>
+        
+    </div>
+
+</div>    
+
+</header>
+
+
+<section class="sell-hero">
+
+<h1>Start Selling on LocalKart</h1>
+
+<p>
+Reach thousands of nearby customers and grow your local business today.
+</p>
+
+<button id="showFormBtn" class="primary-btn">
+Register Your Shop
+</button>
+
+</section>
+
+<section class="commission-section">
+
+    <h2>Simple Seller Commission Model</h2>
+
+    <p class="commission-desc">
+        LocalKart follows a simple and transparent commission model.
+        There are no registration fees, no monthly subscriptions,
+        and no hidden charges. You only pay a small commission
+        when you successfully sell a product.
+    </p>
+
+    <div class="commission-table-container">
+
+        <table class="commission-table">
+
+            <tr>
+                <th>Order Value</th>
+                <th>Seller Receives</th>
+                <th>LocalKart Commission (5%)</th>
+            </tr>
+
+            <tr>
+                <td>₹500</td>
+                <td>₹475</td>
+                <td>₹25</td>
+            </tr>
+
+            <tr>
+                <td>₹1000</td>
+                <td>₹950</td>
+                <td>₹50</td>
+            </tr>
+
+            <tr>
+                <td>₹2000</td>
+                <td>₹1900</td>
+                <td>₹100</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<section class="seller-benefits">
+
+    <h2>Why Sell With LocalKart?</h2>
+
+    <div class="benefit-grid">
+
+        <div class="benefit-card">
+            <h3>Reach Local Customers</h3>
+            <p>
+                Get discovered by customers in your nearby area
+                who are actively searching for products.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h3>Low Commission</h3>
+            <p>
+                Only 5% commission per successful order.
+                You keep 95% of your earnings.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h3>No Monthly Fees</h3>
+            <p>
+                Unlike other platforms, LocalKart charges
+                no subscription or listing fees.
+            </p>
+        </div>
+
+        <div class="benefit-card">
+            <h3>Hyperlocal Delivery</h3>
+            <p>
+                Sell faster using same-day delivery within
+                your local area.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section id="register" class="register-section">
+
+
+    <h2 class="registration-title">Seller Registration</h2>
+
+                <form class="seller-form" id="sellerForm" action="/register-seller" method="POST">
+        
+
+<input type="text" name="shopName" placeholder="Shop Name" required>
+
+<input type="text" name="ownerName" placeholder="Owner Name" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<input type="text" name="address" placeholder="Shop Address" required>
+
+<input type="text" name="pincode" placeholder="Pincode" required>
+
+<select name="category" required>
+<option value="">Select Category</option>
+<option>Grocery</option>
+<option>Bakery</option>
+<option>Pharmacy</option>
+<option>Vegetables</option>
+<option>Dairy</option>
+</select>
+
+<button type="submit" class="register-btn">Register Shop</button>
+ 
+
+</form>
+
+</section>
+
+<a href="checkout.html" class="checkout-fixed-btn">Checkout</a>
+
+
+<footer class="footer">
+
+<p>© 2026 LocalKart. Hyperlocal Marketplace.</p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

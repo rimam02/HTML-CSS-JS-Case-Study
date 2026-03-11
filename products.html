@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products - LocalKart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">
+        <img src="logo.png" class="logo-img">
+        <span>LocalKart</span>
+    </div>
+
+    <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="shops.html">Shops</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    
+</header>
+
+<section class="products-container">
+
+    <h1 class="main-heading">Explore Products</h1>
+
+    <div class="search-container">
+    <input type="text" id="productSearch" placeholder="Search products...">
+    <button onclick="searchProducts()">Search</button>
+</div>
+
+
+    <h2 class="section-title">Vegetables</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/29/40/61/294061c8da24641b45df7c7f672faf32.jpg">
+            <h3 class="product-name">Tomato</h3>
+            <p class="price">₹40/kg</p>
+            <button onclick="addToCart(this,'Tomato',40)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/1a/f0/f4/1af0f44c36a75fff5e1d2beb447c1b8f.jpg">
+            <h3 class="product-name">Potato</h3>
+            <p class="price">₹30/kg</p>
+            <button onclick="addToCart(this,'Potato',30)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/4d/14/48/4d1448596e0f823d1c9d29dcb0f114a3.jpg">
+            <h3 class="product-name">Onion</h3>
+            <p class="price">₹35/kg</p>
+            <button onclick="addToCart(this,'Onion',35)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/6d/bb/ee/6dbbee2a1939501b4dd835c2e7feb7f6.jpg">
+            <h3 class="product-name">Carrot</h3>
+            <p class="price">₹50/kg</p>
+            <button onclick="addToCart(this,'Carrot',50)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/24/16/b9/2416b974b82a8ad589456bdaa37c3b35.jpg">
+            <h3 class="product-name">Cabbage</h3>
+            <p class="price">₹25/kg</p>
+            <button onclick="addToCart(this,'Cabbage',25)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/b1/a8/51/b1a85141c5e0f1f493480f3ea2a19e52.jpg">
+            <h3 class="product-name">Spinach</h3>
+            <p class="price">₹20/bunch</p>
+            <button onclick="addToCart(this,'Spinach',20)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/49/13/a5/4913a50c09c050af6a2d5e961f090cce.jpg">
+            <h3 class="product-name">Peas</h3>
+            <p class="price">₹60/kg</p>
+            <button onclick="addToCart(this,'Peas',60)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/c6/ef/cb/c6efcb4e50e3b70ab288942682222df2.jpg">
+            <h3 class="product-name">Brinjal</h3>
+            <p class="price">₹45/kg</p>
+            <button onclick="addToCart(this,'Brinjal',45)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/24/3b/fc/243bfc9a4c83fb56eff67b85f71cc66c.jpg">
+            <h3 class="product-name">Garlic</h3>
+            <p class="price">₹120/kg</p>
+            <button onclick="addToCart(this,'Garlic',120)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/e5/01/65/e5016590f234af60811ece4e2a792f67.jpg">
+            <h3 class="product-name">Ginger</h3>
+            <p class="price">₹140/kg</p>
+            <button onclick="addToCart(this,'Ginger',140)">Add to Cart</button>
+        </div>
+    </div>
+
+
+    <h2 class="section-title">Fruits</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/45/f9/15/45f91510ff12dbc51f03156046920877.jpg">
+            <h3 class="product-name">Apple</h3>
+            <p class="price">₹120/kg</p>
+            <button onclick="addToCart(this,'Apple',120)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/7c/2d/23/7c2d23df7578a62e66faa52aaac5fc73.jpg">
+            <h3 class="product-name">Banana</h3>
+            <p class="price">₹50/dozen</p>
+            <button onclick="addToCart(this,'Banana',50)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/7a/aa/a5/7aaaa545e00e8a434850e80b8910dd94.jpg">
+            <h3 class="product-name">Orange</h3>
+            <p class="price">₹90/kg</p>
+            <button onclick="addToCart(this,'Orange',90)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/a8/b2/4e/a8b24e299e9ac81c471603c625cdf881.jpg">
+            <h3 class="product-name">Mango</h3>
+            <p class="price">₹150/kg</p>
+            <button onclick="addToCart(this,'Mango',150)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/e2/13/70/e21370583e30a33543d491ff9464bf8a.jpg">
+            <h3 class="product-name">Grapes</h3>
+            <p class="price">₹80/kg</p>
+            <button onclick="addToCart(this,'Grapes',80)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/8b/f2/8e/8bf28e6b9a718175dd44a8e5103c1cae.jpg">
+            <h3 class="product-name">Pineapple</h3>
+            <p class="price">₹60/pc</p>
+            <button onclick="addToCart(this,'Pineapple',60)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/44/20/ce/4420ce95b26df877a9f08ffe3122ec76.jpg">
+            <h3 class="product-name">Watermelon</h3>
+            <p class="price">₹30/kg</p>
+            <button onclick="addToCart(this,'Watermelon',30)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/bd/32/32/bd3232054638992def2be4510a353116.jpg">
+            <h3 class="product-name">Papaya</h3>
+            <p class="price">₹45/kg</p>
+            <button onclick="addToCart(this,'Papaya',45)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/ab/6d/02/ab6d0268c8542125f4e3589c35dc24f6.jpg">
+            <h3 class="product-name">Guava</h3>
+            <p class="price">₹70/kg</p>
+            <button onclick="addToCart(this,'Guava',70)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/3b/7b/b0/3b7bb06994a0861b2c540f6f74ce105a.jpg">
+            <h3 class="product-name">Kiwi</h3>
+            <p class="price">₹25/pc</p>
+            <button onclick="addToCart(this,'Kiwi',25)">Add to Cart</button>
+        </div>
+    </div>
+
+    <h2 class="section-title">Dairy & Bread</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/9d/da/61/9dda612cbc84696270a1cf4a88791a2d.jpg">
+            <h3 class="product-name">Milk</h3>
+            <p class="price">₹55/l</p>
+            <button onclick="addToCart(this,'Milk',55)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://tiimg.tistatic.com/fp/1/007/868/good-source-of-minerals-calcium-chemical-free-fresh-white-curd-443.jpg">
+            <h3 class="product-name">Curd</h3>
+            <p class="price">₹40/500g</p>
+            <button onclick="addToCart(this,'Curd',40)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/44/cf/d9/44cfd9ccfa0d012c7d1a0b0ee7214476.jpg">
+            <h3 class="product-name">Panner</h3>
+            <p class="price">₹80/200g</p>
+            <button onclick="addToCart(this,'Paneer',80)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/f7/0e/34/f70e340a9ee510c45bf009349de6e782.jpg">
+            <h3 class="product-name">Butter</h3>
+            <p class="price">₹60/100g</p>
+            <button onclick="addToCart(this,'Butter',80)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/0c/2e/8a/0c2e8a2e460f1b11d97e8e411afb9318.jpg">
+            <h3 class="product-name">Cheese</h3>
+            <p class="price">₹120/200g</p>
+            <button onclick="addToCart(this,'Cheese',120)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/7f/ce/7a/7fce7afbf66cf7fa520a560eb50a6e8f.jpg">
+            <h3 class="product-name">Brown Bread</h3>
+            <p class="price">₹40/pack</p>
+            <button onclick="addToCart(this,'Brown Bread',40)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/40/2c/91/402c91680eee1a33a2b92c2465ddef09.jpg">
+            <h3 class="product-name">white Bread</h3>
+            <p class="price">₹25/pack</p>
+            <button onclick="addToCart(this,'White Bread',35)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/1b/3e/0b/1b3e0b856b8937e09353290c7f9e3f88.jpg">
+            <h3 class="product-name">Eggs</h3>
+            <p class="price">₹70/dozen</p>
+            <button onclick="addToCart(this,'Eggs',70)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/03/0a/ed/030aedad5f2bc613d6a8e3ec3dbb87dc.jpg">
+            <h3 class="product-name">Bagel</h3>
+            <p class="price">₹50/pc</p>
+            <button onclick="addToCart(this,'Bagel',50)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://food-language.com/uploads/easy-classic-baguettes-snapshot-3204-hero-0-1768161548465-xlarge.jpg">
+            <h3 class="product-name">Baguettes</h3>
+            <p class="price">₹70/pc</p>
+            <button onclick="addToCart(this,'Baguettes',70)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/73/65/19/73651948c02c1aeca8c45974d7765374.jpg">
+            <h3 class="product-name">Creame</h3>
+            <p class="price">₹65/200ml</p>
+            <button onclick="addToCart(this,'Creame',65)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://delishbite.in/wp-content/uploads/2023/07/Blog_1.jpg">
+            <h3 class="product-name">Buttermilk</h3>
+            <p class="price">₹100/l</p>
+            <button onclick="addToCart(this,'Buttermilk',100)">Add to Cart</button>
+        </div>
+    </div>
+
+    <h2 class="section-title">Lentils & Grains</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/0f/8c/cb/0f8ccb23ca4476703ab4fba1eb26744d.jpg">
+            <h3 class="product-name">Rice</h3>
+            <p class="price">₹60/kg</p>
+            <button onclick="addToCart(this,'Rice',60)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/cd/13/b9/cd13b98dfb9527f0d85b206fbbaebe28.jpg">
+            <h3 class="product-name">Wheat</h3>
+            <p class="price">₹45/kg</p>
+            <button onclick="addToCart(this,'Wheat',45)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/98/94/7e/98947e48788e31ec0be43fb776958db8.jpg">
+            <h3 class="product-name">Moong Dal</h3>
+            <p class="price">₹110/kg</p>
+            <button onclick="addToCart(this,'Moong Dal',110)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/c7/90/0d/c7900d653d82b965fa4a5ee7575d9efa.jpg">
+            <h3 class="product-name">Toor Dal</h3>
+            <p class="price">₹120/kg</p>
+            <button onclick="addToCart(this,'Toor Dal',120)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/b2/14/d7/b214d736bb7dfafdb496001b0bad8f62.jpg">
+            <h3 class="product-name">Masoor Dal</h3>
+            <p class="price">₹90/kg</p>
+            <button onclick="addToCart(this,'Masoor Dal',90)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/8a/d0/a8/8ad0a87b8b2357a77c95852f61401217.jpg">
+            <h3 class="product-name">Oats</h3>
+            <p class="price">₹150/kg</p>
+            <button onclick="addToCart(this,'Oats',150)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/1f/39/bc/1f39bc5c114a7121bbb63e7eb71fe042.jpg">
+            <h3 class="product-name">Cornflakes</h3>
+            <p class="price">₹180/500g</p>
+            <button onclick="addToCart(this,'Cornflakes',180)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/0c/44/0f/0c440ffa9e6469f228e5b019a6b0748e.jpg">
+            <h3 class="product-name">Rajma</h3>
+            <p class="price">₹130/kg</p>
+            <button onclick="addToCart(this,'Rajma',130)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/8c/78/37/8c7837d2858aba4a916310d3e1cd6967.jpg">
+            <h3 class="product-name">Black Gram</h3>
+            <p class="price">₹100/kg</p>
+            <button onclick="addToCart(this,'Black Gram',100)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/4a/88/91/4a889164ce2b2da0bbb85ee7ffa463cc.jpg">
+            <h3 class="product-name">Millet</h3>
+            <p class="price">₹170/kg</p>
+            <button onclick="addToCart(this,'Millet',170)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Oil & Spices</h2>
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/89/bb/c4/89bbc43dffaf55a1a04e9efa50f3f6a5.jpg">
+            <h3 class="product-name">Sunflower Oil</h3>
+            <p class="price">₹150/l</p>
+            <button onclick="addToCart(this,'Sunflower Oil',150)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/50/c6/ce/50c6ce9cbf24ba2d906800c9fa21d365.jpg">
+            <h3 class="product-name">Mustard Oil</h3>
+            <p class="price">₹170/l</p>
+            <button onclick="addToCart(this,'Mustard Oil',170)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/d2/08/40/d208403ee2b1e1118a0ace0e3065c639.jpg">
+            <h3 class="product-name">Turmeric</h3>
+            <p class="price">₹40/100g</p>
+            <button onclick="addToCart(this,'Turmeric',40)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/6e/b4/4b/6eb44b910adc414ed4c7a336b044aeca.jpg">
+            <h3 class="product-name">Chilli Powder</h3>
+            <p class="price">₹50/100g</p>
+            <button onclick="addToCart(this,'Chilli Powder',50)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/e2/12/91/e21291246df1bd18cf528a02cceaf56d.jpg">
+            <h3 class="product-name">Cumin Seeds</h3>
+            <p class="price">₹60/100g</p>
+            <button onclick="addToCart(this,'Cumin Seeds',60)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/53/86/19/53861932cff5cc63634f100dbfb0f9ad.jpg">
+            <h3 class="product-name">Coriander Powder</h3>
+            <p class="price">₹45/100g</p>
+            <button onclick="addToCart(this,'Coriander Powder',45)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/21/1d/81/211d81f881b8cbada123dfb1856b9c45.jpg">
+            <h3 class="product-name">Black Pepper</h3>
+            <p class="price">₹80/100g</p>
+            <button onclick="addToCart(this,'Black Pepper',80)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/b6/48/64/b64864260b2dff591b0a6275333ca5fa.jpg">
+            <h3 class="product-name">Garam Masala</h3>
+            <p class="price">₹55/100g</p>
+            <button onclick="addToCart(this,'Garam Masala',55)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/a9/fd/a5/a9fda5c70e5b881d9b077768120e8142.jpg">
+            <h3 class="product-name">Olive Oil</h3>
+            <p class="price">₹600/l</p>
+            <button onclick="addToCart(this,'Olive Oil',600)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/6a/06/f3/6a06f3294f51e5819b054544a9827ceb.jpg">
+            <h3 class="product-name">Sesame Oil</h3>
+            <p class="price">₹220/l</p>
+            <button onclick="addToCart(this,'Sesame Oil',220)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <h2 class="section-title">Medicines</h2>
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/9c/6f/0f/9c6f0ff4b77065a82e78a2b487cca596.jpg">
+            <h3 class="product-name">Paracetamol</h3>
+            <p class="price">₹25/strip</p>
+            <button onclick="addToCart(this,'Paracetamol',25)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/2f/15/16/2f1516b5af794edda705940057b2a061.jpg">
+            <h3 class="product-name">Cough Syrup</h3>
+            <p class="price">₹90/bottel</p>
+            <button onclick="addToCart(this,'Cough Syrup',90)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/b1/43/70/b143708529b5950f6c6c127bf6a77f6a.jpg">
+            <h3 class="product-name">Omega Capsule</h3>
+            <p class="price">₹450/strip</p>
+            <button onclick="addToCart(this,'Omega Capsule',450)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/e1/02/ea/e102ea7071618c4b4664bb161c5213f8.jpg">
+            <h3 class="product-name">Pain Relief Spray</h3>
+            <p class="price">₹120/can</p>
+            <button onclick="addToCart(this,'Pain Relief Spray',120)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/62/af/a3/62afa38158063943a17cd2836185eb47.jpg">
+            <h3 class="product-name">Hand Sanitizer</h3>
+            <p class="price">₹50/250ml</p>
+            <button onclick="addToCart(this,'Hand Sanitizer',50)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/e2/81/5f/e2815f51b65c5213589194d401faefae.jpg">
+            <h3 class="product-name">Thermometer</h3>
+            <p class="price">₹150/pc</p>
+            <button onclick="addToCart(this,'Thermometer',150)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://themedihubpharma.in/wp-content/uploads/2024/06/Electral-Powder-ORS-for-Replenishing-Body-Fluids-and-Electrolytes.png">
+            <h3 class="product-name">ORS</h3>
+            <p class="price">₹20/pack</p>
+            <button onclick="addToCart(this,'ORS',20)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/25/04/a7/2504a7774f2652eef4135042482dff67.jpg">
+            <h3 class="product-name">Multivitamin</h3>
+            <p class="price">₹80/strip</p>
+            <button onclick="addToCart(this,'Multivitamin',80)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/736x/24/8d/10/248d1064e2f193f8f8416301b92cd109.jpg">
+            <h3 class="product-name">Bandage</h3>
+            <p class="price">₹25/roll</p>
+            <button onclick="addToCart(this,'Bandage',25)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i.pinimg.com/1200x/f5/5d/46/f55d463e6b91e28b0d77ec8d18c5e781.jpg">
+            <h3 class="product-name">Bandaid</h3>
+            <p class="price">₹5/pc</p>
+            <button onclick="addToCart(this,'Bandaid',5)">Add to Cart</button>
+        </div>
+
+    </div>
+
+
+</section>
+
+<div class="view-cart-container">
+    <a href="cart.html" class="view-cart-btn-main">View Cart</a>
+</div>
+
+<footer class="footer">
+    <p>© 2026 LocalKart. Hyperlocal Marketplace</p>
+</footer>
+
+<script src="js/script.js" defer></script>
+
+</body>
+</html>
