@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LocalKart - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+    <div class="logo-container">
+        <img src="logo.png" alt="LocalKart Logo" class="nav-logo">
+        <span class="logo-text">LocalKart</span>
+    </div>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shops.html">Shops</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+    </nav>
+
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/1200x/1f/ea/bc/1feabc7ad405b1d32e318cfe0b7ef049.jpg" class="d-block w-100" alt="Slide 1">
+      <div class="carousel-caption">
+        <h2>Welcome to LocalKart...</h2>
+        <h3>Shop Fresh Groceries</h3>
+        <p>Support your nearby stores</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/1200x/ea/5f/91/ea5f91e6a1cf601e91451de5e3d3dd27.jpg" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption">
+        <h2>Fast Delivery</h2>
+        <p>Same Day Doorstep Service</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/6d/ef/ba/6defbad8bd825c334ebca5b4c013df3f.jpg" class="d-block w-100" alt="Slide 3">
+      <div class="carousel-caption">
+        <h1>Your Local Market, One Click Away</h1>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<section class="pincode-section">
+
+    <div class="pincode-card">
+
+        <img src="mappin.png" alt="Location Pin" class="pin-image">
+
+        <h2 class="pin-title">Enter Pincode</h2>
+
+        <div class="status-box" id="statusBox"></div>
+
+        <p>Discover stores and fast delivery near you</p>
+
+        <div class="pincode-box">
+            <input type="text"
+                   id="pincodeInput"
+                   maxlength="6"
+                   placeholder="Enter 6-digit pincode">
+
+            <button id="checkBtn">Check Availability</button>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="best-sellers-section">
+
+    <h2 class="section-title">⭐ Best Seller Shops</h2>
+
+    <div class="best-sellers-grid">
+ 
+        <div class="best-card" onclick="goToShops()">
+
+            <h4>Fresh Mart Grocery</h4>
+            <span class="distance-badge">0.8 km</span>
+            <p class="rating">⭐ 4.8 / 5</p>
+        </div>
+
+            <div class="best-card" onclick="goToShops()">
+            <h4>HealthPlus Pharmacy</h4>
+            <span class="distance-badge">0.6 km</span>
+            <p class="rating">⭐ 4.7 / 5</p>
+        </div>
+
+        <div class="best-card" onclick="goToShops()">
+            <h4>City Supermarket</h4>
+            <span class="distance-badge">2.0 km</span>
+            <p class="rating">⭐ 4.6 / 5</p>
+        </div>
+        
+        <div class="best-card" onclick="goToShops()">
+            <h4>Bakers Point</h4>
+            <span class="distance-badge">1.8 km</span>
+            <p class="rating">⭐ 4.5 / 5</p>
+        </div>
+
+        <div class="best-card" onclick="goToShops()">
+            <h4>Organic World</h4>
+            <span class="distance-badge">3.1 km</span>
+            <p class="rating">⭐ 4.4 / 5</p>
+        </div>
+
+    </div>
+
+</section>
+
+ <div class="explore-container">
+    <a href="shops.html" class="explore-box">
+        Explore Shops 
+    </a>
+</div>
+
+
+<section class="about-section">
+    <div class="about-container">
+
+        <h2>About LocalKart</h2>
+        <p>
+            LocalKart is a hyperlocal marketplace connecting you with trusted shops 
+            near your location. From groceries to medicines, we ensure fast delivery 
+            and verified stores within your area.
+        </p>
+
+        <div class="about-stats">
+            <div class="stat-box">
+                <h3>4.8 ⭐</h3>
+                <p>Customer Rating</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>5000+</h3>
+                <p>Happy Customers</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>50+</h3>
+                <p>Local Shops</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>Same Day</h3>
+                <p>Delivery Available</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="contact-section">
+
+    <img src="contactus.png" alt="Contact Logo" class="contact-logo">
+
+    <h2>Contact Us</h2>
+
+    <form class="contact-form">
+        <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+            <input type="tel" placeholder="Mobile Number" required>
+        </div>
+
+        <div class="form-group">
+            <input type="email" placeholder="Email ID" required>
+        </div>
+
+        <div class="form-group">
+            <input type="text" placeholder="Shop Name">
+        </div>
+
+        <div class="form-group">
+            <textarea placeholder="Your Query" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="contact-btn">Submit</button>
+    </form>
+</div>
+
+    <footer class="footer">
+        © 2026 LocalKart | Hyperlocal Marketplace
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
